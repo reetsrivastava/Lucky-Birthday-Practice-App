@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Stencil+Text:wght@300&family=Pirata+One&display=swap');
+
+/* font-family: 'Audiowide', cursive;
+font-family: 'Big Shoulders Stencil Text', cursive;
+font-family: 'Pirata One', cursive; */
+
+:root {
+    --primary-color:#00587a;
+    --secondary-color: #008891;
+    --tertiary-color:#0f3057;
+    --optional-color:#e7e7de;
+
+}
+
+/* used for changing the tex selection color of the page */
+::selection {
+    color: yellow;
+    background: green;
+  }
+
+html {
+    scroll-behavior:smooth ;
+}
+
+body {
+    background-image: url("/images/bg-image.jpg");
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+}
+
+#item {
+    background-color: var(--secondary-color);
+    width: 60%;
+    margin: auto;
+    opacity: 90%;
+    padding: 1rem;
+    color: var(--optional-color);
+    border-radius: 25px;
+    z-index: 1.5;
+    box-shadow: 5px 5px 10px 5px var(--tertiary-color);
+    /* position: fixed; */
+    /* next lines are used for centering the image in middle of the page */
+    /* top: 50%;
+    left: 50%; */
+    /* bring your own prefixes */
+    /* transform: translate(-50%, -50%); */
+}
+
+h1 {
+    font-size: 40px;
+
+}
+
+strong {
+    font-size: 30px;
+    color: var(--tertiary-color);
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+
+.user {
+    background-color: var(--primary-color);
+    z-index: 0.5;
+    border: var(--tertiary-color);
+    box-shadow: 5px 5px 5px 5px var(--tertiary-color) inset;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 60%;
+    border-radius: 10px;
+    
+}
+
+#btn {
+    display: block;
+    margin: 1rem auto;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    border-radius: 25px;
+    padding: 1rem;
+    font-size: 20px;
+    color: var(--optional-color);
+    background-color: var(--tertiary-color);
+}
+
+#btn:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input {
+    padding: 0.5rem;
+    color: var(--optional-color);
+    background: transparent;
+    /* border-color: var(--primary-color); */
+    font-size: 20px;
+    width: 70%;
+}
+
+.img-result {
+    display: none;
+}
+
+img {
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px 5px var(--tertiary-color);
+    width: 60%;
+    height: 50%;
+}
+
+#reset {
+    display: block;
+    margin: 1rem auto;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 20px;
+    color: var(--optional-color);
+    background-color: var(--tertiary-color);
+    text-decoration: none;
+    width: fit-content;
+}
+
+/* footer {
+    text-align: center;
+    width: 70%;
+    margin: 0.5rem auto;
+    color: var(--primary-color);
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 20px;
+} */
+
+@media(max-width:370px) {
+    #item {
+        width: 80%;
+    }
+    .user {
+        width: 80%;
+    }
+}
+
+
+
